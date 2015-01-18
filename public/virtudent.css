@@ -29,7 +29,7 @@ body {
     height: 50px;
     margin: 0px;
     padding: 0px;
-    background:#F0f0Ff;
+    background:#fff;
     border:1px solid #CCC;
     width: 100%;
     position: fixed;
@@ -44,6 +44,26 @@ body {
     font-size: 30px;
     text-decoration: underline;
     /*text-shadow:;*/
+}
+
+.logo{
+    height: 40px;
+    float: left;
+    margin-top: -13px;
+}
+
+#header2 {
+    font-family: 'Lato';
+    height: 30px;
+    font-size: 10px;
+    margin: 0px;
+    margin-top: 50px;
+    padding: 0px;
+    background:#fff;
+    border:1px solid #CCC;
+    width: 100%;
+    position: fixed;
+    top: 0px;
 }
 
 /* Other Misc */
@@ -100,3 +120,23 @@ td, th {
 table {
   border-collapse: collapse;
 }
+
+/* Patient Page */
+
+.patient1{
+    border: 1px solid red;
+    height: 30%;
+}
+
+.patient2{
+    border: 1px solid red;
+    float: left;
+    height: 50%;
+}
+.patient3{
+    border: 1px solid red;
+}
+.patient4{
+    border: 1px solid red;
+}
+

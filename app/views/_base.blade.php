@@ -20,13 +20,29 @@ date_default_timezone_set ('america/new_york');
       <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
     @show
   </head>
-<!--     <div id='header'>
+
+
+    <div id='header'>
       <ul id="navlist">
         <li ><a class='' href="/"></a><li>
+        <li> <img class='logo' src="{{URL::asset('logo.gif')}}"></li>
+    @if(Auth::check())
+      <li><a href="/logout">Logout</a></li>
+      <li><a href="/edit">Edit Profile</a></li>
+    @else
+    <li><a href="/signup">Sign Up</a>|<a href="/login">Login</a></li>
+    @endif
+
+    @if(Auth::check())
+        <li>Hello {{ Auth::user()->name; }}!</li>
+    @endif 
       </ul>
-    </div><br><br> -->
+    </div><br><br>
   <body>
   <div id="container">
+  @if(Session::get('flash_message'))
+      <div class='flash-message'>{{ Session::get('flash_message') }}</div>
+  @endif
   @yield('body')
 
   </div>
