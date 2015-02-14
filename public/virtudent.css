@@ -123,6 +123,10 @@ table {
 
 /* Patient Page */
 
+.img1{
+    width: 100%;
+}
+
 .patient1{
     border: 1px solid red;
     height: 30%;
